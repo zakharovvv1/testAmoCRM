@@ -1,0 +1,166 @@
+.footer {
+  padding-top: 69px;
+  padding-left: 150px;
+  padding-right: 150px;
+  a {
+    color: #e4e5ea;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  li {
+    color: #e4e5ea;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.about {
+  display: flex;
+  padding-top: 55px;
+}
+
+.aboutCompanyText {
+  color: #656566;
+
+  margin-bottom: 20px;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.aboutCompanyUl {
+  flex-direction: column;
+  display: flex;
+  row-gap: 10px;
+}
+
+.aboutCompanyBlock {
+  margin-right: 98px;
+}
+
+.aboutCompanyMenuUl {
+  display: flex;
+  column-gap: 52px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+.aboutCompanyMenu {
+  margin-right: auto;
+}
+
+.socialFooter {
+  display: flex;
+  margin-bottom: 19px;
+  column-gap: 10px;
+  margin-top: 21px;
+}
+
+.aboutCompanyAdress {
+  color: #e4e5ea;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.copyright {
+  padding-top: 33px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  p {
+    color: #e4e5ea;
+
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  a {
+    margin-top: 5px;
+    color: #e4e5ea;
+
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .about {
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+    padding-top: 28px;
+  }
+
+  .footer {
+    padding-top: 59px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about {
+    background: #0e1014;
+    padding-right: 15px;
+    padding-left: 15px;
+    row-gap: 30px;
+  }
+
+  .contacts {
+    align-items: flex-start;
+  }
+
+  .copyright {
+    background: #0e1014;
+    padding-top: 50px;
+    text-align: left;
+    padding-bottom: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .socialFooter {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 325px) {
+  .aboutCompanyBlock {
+    margin-right: 0;
+  }
+}

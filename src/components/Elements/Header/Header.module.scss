@@ -1,0 +1,152 @@
+.header {
+  padding-left: 150px;
+  padding-top: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 150px;
+  ul {
+    margin-left: 52px;
+    display: flex;
+    column-gap: 30px;
+  }
+  a {
+    color: #e4e5ea;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.phone {
+  margin-left: 137px;
+  text-decoration: none;
+  color: #e4e5ea;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.logo {
+  p {
+    color: #e4e5ea;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 14px;
+  }
+}
+
+.social {
+  margin-left: auto;
+  column-gap: 30px;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex: 0 1 100%;
+}
+.headerText {
+  margin-top: 11px;
+  color: #e4e5ea;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+    ul {
+      margin-left: 15px;
+    }
+  }
+  .phone {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    ul {
+      li {
+        &:last-child {
+          display: none;
+        }
+      }
+      column-gap: 20px;
+    }
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .headerText {
+    display: none;
+  }
+
+  .social {
+    margin-left: auto;
+  }
+
+  .phone {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    z-index: 10;
+    position: relative;
+    ul {
+      margin-left: 0;
+      column-gap: 25px;
+      li {
+        text-transform: uppercase;
+      }
+    }
+    justify-content: space-between;
+    background: #0e1014;
+    height: 55px;
+    padding-top: 0;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .phone {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    ul {
+      width: 100%;
+      justify-content: space-between;
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .header {
+    ul {
+      column-gap: normal;
+    }
+  }
+}

@@ -1,0 +1,338 @@
+main {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 58vw;
+    top: 547px;
+    background-image: url("./img//red\ ball.svg");
+    fill: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.48) 0%,
+      rgba(212, 93, 93, 0.25) 59.67%,
+      rgba(167, 49, 49, 0.26) 78.59%,
+      rgba(130, 25, 25, 0.23) 100%
+    );
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
+    backdrop-filter: blur(2px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 35vw;
+    top: 65px;
+    fill: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.54) 0%,
+      rgba(212, 93, 93, 0.26) 59.67%,
+      rgba(167, 49, 49, 0.25) 78.59%,
+      rgba(130, 25, 25, 0.25) 100%
+    );
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+    backdrop-filter: blur(2px);
+    background-image: url("./img//red\ ball\ top\ \(1\).svg");
+  }
+  padding-top: 90px;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  justify-content: space-between;
+  button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    justify-self: flex-end;
+    margin-top: 61px;
+    color: #e4e5ea;
+    background: #4077f3;
+    padding: 21px 35px;
+    border: 0px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    &:hover {
+      background-color: #07256a;
+    }
+  }
+  h1 {
+    color: #e4e5ea;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    span {
+      background-image: linear-gradient(
+        90deg,
+        rgba(252, 176, 69, 1),
+        rgba(255, 63, 120, 1)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Inter;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  h4 {
+    margin-top: 15px;
+    color: #e4e5ea;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 40px;
+    span {
+      background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    top: -2px;
+    left: 60vw;
+    z-index: -1;
+    fill: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(236, 208, 255, 0.64) 0%,
+      rgba(161, 93, 207, 0.24) 59.67%,
+      rgba(118, 49, 164, 0.21) 78.59%,
+      rgba(86, 24, 128, 0.23) 100%
+    );
+    filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+    backdrop-filter: blur(2px);
+    background-image: url("./img//purple\ ball.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.subtitle {
+  margin-top: 30px;
+  line-height: normal;
+  color: #e4e5ea;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.mainRightSubtitle {
+  color: #e4e5ea;
+  text-align: right;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.mainRightText {
+  color: #e4e5ea;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 6px;
+}
+
+.mainRightUl {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 30px;
+  column-gap: 31px;
+  li {
+    flex: 0 1 50%;
+  }
+}
+
+.mainRightUlMobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 50px;
+      left: 5vw;
+      top: 500px;
+      fill: radial-gradient(
+        82.3% 82.3% at 27.25% 26.5%,
+        rgba(255, 208, 208, 0.48) 0%,
+        rgba(212, 93, 93, 0.25) 59.67%,
+        rgba(167, 49, 49, 0.26) 78.59%,
+        rgba(130, 25, 25, 0.23) 100%
+      );
+      filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(5px);
+      backdrop-filter: blur(2px);
+      background-image: url("./img//mobile//main/red\ ball\ \(1\).svg");
+    }
+
+    padding-top: 40px;
+    flex-direction: column;
+    h4 {
+      margin-top: 0;
+      text-align: left;
+      margin-bottom: 20px;
+      span {
+        text-transform: lowercase;
+      }
+    }
+
+    .btnContainer {
+      display: none;
+    }
+  }
+
+  .main {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -10;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+        304.35% 148.2% at 3.2% 3.49%,
+        rgba(255, 246, 233, 0.1) 0%,
+        rgba(26, 29, 35, 0.1) 26.62%,
+        rgba(26, 29, 35, 0.1) 52.1%,
+        rgba(26, 29, 35, 0.01) 70.17%,
+        rgba(26, 29, 35, 0) 100%
+      );
+      backdrop-filter: blur(7.5px);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 45px;
+      height: 50px;
+      left: 89vw;
+      top: 300px;
+      fill: radial-gradient(
+        82.3% 82.3% at 27.25% 26.5%,
+        rgba(255, 208, 208, 0.48) 0%,
+        rgba(212, 93, 93, 0.25) 59.67%,
+        rgba(167, 49, 49, 0.26) 78.59%,
+        rgba(130, 25, 25, 0.23) 100%
+      );
+      filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(5px);
+      backdrop-filter: blur(2px);
+      background-image: url("./img//mobile/main/purple\ ball.svg");
+    }
+  }
+
+  .subtitle {
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
+
+  .mainRightUl {
+    display: none;
+  }
+
+  .mainRightUlMobile {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+
+    column-gap: 10px;
+    row-gap: 14px;
+    li {
+      column-gap: 5px;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 1px;
+        background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+      }
+      color: #e4e5ea;
+      font-family: Montserrat;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.65px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    padding-left: 14px;
+    padding-right: 14px;
+
+    h1 {
+      font-size: 36px;
+
+      span {
+        font-size: 36px;
+      }
+    }
+  }
+
+  main {
+    &::after {
+      top: 450px;
+    }
+  }
+
+  .main {
+    &::after {
+      left: 88vw;
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .main {
+    &::after {
+      left: 86vw;
+    }
+  }
+}
