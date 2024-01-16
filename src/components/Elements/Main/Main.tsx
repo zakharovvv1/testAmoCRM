@@ -1,6 +1,7 @@
 import styles from "./Main.module.scss";
 
 const Main = () => {
+  console.log('Новая фича')
   return (
     <section className={styles.main}>
       <main>
